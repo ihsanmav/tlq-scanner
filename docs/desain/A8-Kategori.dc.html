@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Kategori</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="tlq.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="row" style="width:1280px;height:800px;background:#fafafa;overflow:hidden;align-items:stretch">
+  <div class="side">
+    <div class="row g12" style="padding:0 12px 16px"><div class="logo">TLQ</div><span class="b t15">Master Data</span></div>
+    <div class="nav">Ringkasan</div>
+    <div class="nav">Katalog kartu</div>
+    <div class="nav">Hasil scan</div>
+    <div class="nav">Tema</div>
+    <div class="nav on">Kategori</div>
+    <div class="nav">Impor katalog</div>
+    <div class="grow"></div>
+    <div class="nav">Keluar</div>
+  </div>
+  <div class="col grow" style="padding:32px 40px;gap:18px;min-width:0">
+    <div class="row between">
+      <div class="col g4"><h1 class="h1">Kategori</h1><span class="t14 mut">Setiap kategori berada di dalam satu tema dan berisi beberapa kartu hasil scan. Kategori nonaktif tidak muncul di aplikasi Scanner.</span></div>
+      <a class="btn p" href="A9-Tambah-kategori.dc.html" style="text-decoration:none">+ Tambah kategori</a>
+    </div>
+    <div class="row g8 wrap">
+      <button class="chip on">Semua tema</button>
+      <button class="chip">Married</button>
+      <button class="chip">Penghafal Quran</button>
+      <button class="chip">Parenting</button>
+      <button class="chip">Emotional</button>
+      <button class="chip">Tema lain</button>
+    </div>
+    <div class="card" style="overflow:hidden">
+      <table class="t">
+        <thead><tr><th>Urutan</th><th>Kode</th><th>Nama kategori</th><th>Tema</th><th>Kartu</th><th>Aktif</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td class="b">C01</td><td>Sebelum menikah</td><td><span class="badge teal">Married</span></td><td>5</td><td><span class="sw" role="img" aria-label="Aktif"></span></td><td><button class="btn sm">Ubah</button></td></tr>
+          <tr><td>2</td><td class="b">C02</td><td>Hidup berpasangan</td><td><span class="badge teal">Married</span></td><td>5</td><td><span class="sw" role="img" aria-label="Aktif"></span></td><td><button class="btn sm">Ubah</button></td></tr>
+          <tr><td>3</td><td class="b">C03</td><td>Mengatasi konflik</td><td><span class="badge teal">Married</span></td><td>3</td><td><span class="sw" role="img" aria-label="Aktif"></span></td><td><button class="btn sm">Ubah</button></td></tr>
+          <tr><td>1</td><td class="b">C04</td><td>Menghafal</td><td><span class="badge teal">Penghafal Quran</span></td><td>3</td><td><span class="sw" role="img" aria-label="Aktif"></span></td><td><button class="btn sm">Ubah</button></td></tr>
+          <tr><td>2</td><td class="b">C05</td><td>Menjaga hafalan</td><td><span class="badge teal">Penghafal Quran</span></td><td>2</td><td><span class="sw" role="img" aria-label="Aktif"></span></td><td><button class="btn sm">Ubah</button></td></tr>
+          <tr><td>1</td><td class="b">C06</td><td>Mendidik anak</td><td><span class="badge teal">Parenting</span></td><td>10</td><td><span class="sw" role="img" aria-label="Aktif"></span></td><td><button class="btn sm">Ubah</button></td></tr>
+          <tr><td>2</td><td class="b">C07</td><td>Ibu dan bayi</td><td><span class="badge teal">Parenting</span></td><td>6</td><td><span class="sw" role="img" aria-label="Aktif"></span></td><td><button class="btn sm">Ubah</button></td></tr>
+          <tr><td>1</td><td class="b">C08</td><td>Cemas</td><td><span class="badge teal">Emotional</span></td><td>4</td><td><span class="sw" role="img" aria-label="Aktif"></span></td><td><button class="btn sm">Ubah</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <span class="t12 mut">Menampilkan 8 dari 13 kategori. Urutan berlaku di dalam tema. Nama kategori dan jumlah kartu adalah contoh.</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

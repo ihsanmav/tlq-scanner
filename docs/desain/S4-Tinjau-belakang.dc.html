@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Tinjau sisi belakang dan simpan</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="tlq.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="col" style="width:1280px;height:800px;background:#fafafa;overflow:hidden">
+  <div class="top">
+    <div class="logo">TLQ</div>
+    <div class="col"><span class="b t14">TLQ Scanner</span><span class="t12 mut">The Living Qur'an</span></div>
+    <div class="grow"></div>
+    <div class="row g8">
+      <div class="step done"><i>✓</i>Tema dan kategori</div><div class="line"></div>
+      <div class="step done"><i>✓</i>Sisi depan</div><div class="line"></div>
+      <div class="step on"><i>3</i>Sisi belakang</div><div class="line"></div>
+      <div class="step"><i>4</i>Simpan</div>
+    </div>
+    <div class="grow"></div>
+    <span class="badge">Operator 1</span>
+  </div>
+  <div class="row grow" style="padding:28px 64px;gap:32px;align-items:stretch">
+    <div class="col g12" style="width:400px;flex:none">
+      <h1 class="h2">Foto sisi belakang</h1>
+      <div class="cardimg col g8" style="height:360px;justify-content:center">
+        <span class="t12 b" style="letter-spacing:.08em">INSIGHT</span>
+        <span class="t14" style="line-height:1.6">Ketenangan dalam rumah tangga tumbuh dari kebiasaan kecil yang dijaga setiap hari.</span>
+        <span class="t12 b" style="letter-spacing:.08em;margin-top:8px">WHAT TO DO</span>
+        <span class="t14" style="line-height:1.6">1. Ucapkan terima kasih pada pasanganmu untuk satu hal kecil.<br>2. Tanyakan kabarnya sebelum bercerita tentang harimu.<br>3. Sisihkan 10 menit tanpa ponsel bersama.</span>
+      </div>
+      <span class="t13 mut">Foto contoh. Teks contoh, bukan isi kartu asli.</span>
+      <button class="btn block">Foto ulang</button>
+    </div>
+    <div class="col grow g12" style="min-width:0">
+      <div class="row between">
+        <h1 class="h2">Periksa sisi belakang</h1>
+        <span class="badge ok">Keyakinan baca: 94%</span>
+      </div>
+      <div class="card p16">
+        <label class="lbl" for="in">Insight / Tafsir</label>
+        <textarea class="inp" id="in" rows="2">Ketenangan dalam rumah tangga tumbuh dari kebiasaan kecil yang dijaga setiap hari.</textarea>
+      </div>
+      <div class="card p16 col g8">
+        <div class="row between"><span class="lbl" style="margin:0">What to do</span><span class="t12 mut">3 langkah · geser untuk mengubah urutan</span></div>
+        <div class="todo"><span class="gr" aria-hidden="true">⋮⋮</span><span class="cb" aria-hidden="true"></span><input value="Ucapkan terima kasih pada pasanganmu untuk satu hal kecil" aria-label="Langkah 1"><button class="x" aria-label="Hapus langkah 1">×</button></div>
+        <div class="todo"><span class="gr" aria-hidden="true">⋮⋮</span><span class="cb" aria-hidden="true"></span><input value="Tanyakan kabarnya sebelum bercerita tentang harimu" aria-label="Langkah 2"><button class="x" aria-label="Hapus langkah 2">×</button></div>
+        <div class="todo"><span class="gr" aria-hidden="true">⋮⋮</span><span class="cb" aria-hidden="true"></span><input value="Sisihkan 10 menit tanpa ponsel bersama" aria-label="Langkah 3"><button class="x" aria-label="Hapus langkah 3">×</button></div>
+        <button class="addrow">+ Tambah langkah</button>
+      </div>
+      <div class="card p12 row g12">
+        <div class="col g4 grow"><span class="t12 mut b">RINGKASAN KARTU</span><span class="t14"><b>Ar-Rum 30:21</b> · Married › Sebelum menikah</span></div>
+        <span class="badge warn">Draf</span>
+        <button class="btn sm">Ubah sisi depan</button>
+      </div>
+      <div class="grow"></div>
+      <div class="row g12" style="justify-content:flex-end">
+        <button class="btn lg">Kembali</button>
+        <button class="btn p lg">Simpan sebagai draf</button>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

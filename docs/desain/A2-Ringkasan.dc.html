@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Ringkasan</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="tlq.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="row" style="width:1280px;height:800px;background:#fafafa;overflow:hidden;align-items:stretch">
+  <div class="side">
+    <div class="row g12" style="padding:0 12px 16px"><div class="logo">TLQ</div><span class="b t15">Master Data</span></div>
+    <div class="nav on">Ringkasan</div>
+    <div class="nav">Katalog kartu</div>
+    <div class="nav">Hasil scan</div>
+    <div class="nav">Tema</div>
+    <div class="nav">Kategori</div>
+    <div class="nav">Impor katalog</div>
+    <div class="grow"></div>
+    <div class="nav">Keluar</div>
+  </div>
+  <div class="col grow" style="padding:32px 40px;gap:24px;min-width:0">
+    <div class="row between">
+      <div class="col g4"><h1 class="h1">Ringkasan</h1><span class="t14 mut">Pantau progres scan menuju 200 kartu pertama (target 22 Oktober 2026).</span></div>
+      <span class="badge">Admin</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px">
+      <div class="card p20 col g4"><span class="t13 mut">Total kartu</span><span class="h1">62</span><span class="t12 mut">dari target 200</span></div>
+      <div class="card p20 col g4"><span class="t13 mut">Draf</span><span class="h1">41</span><span class="t12 mut">menunggu diperiksa</span></div>
+      <div class="card p20 col g4"><span class="t13 mut">Final</span><span class="h1 teal">17</span><span class="t12 mut">siap dipakai</span></div>
+      <div class="card p20 col g4"><span class="t13 mut">Perlu ulang</span><span class="h1 red">4</span><span class="t12 mut">scan perlu diulang</span></div>
+    </div>
+    <div class="row g16" style="align-items:stretch">
+      <div class="card p20 col g16 grow">
+        <span class="h3">Progres per tema (target 25 kartu)</span>
+        <div class="row g12"><span class="t14" style="width:140px">Married</span><div class="bar grow"><i style="width:52%"></i></div><span class="t13 mut" style="width:48px;text-align:right">13/25</span></div>
+        <div class="row g12"><span class="t14" style="width:140px">Penghafal Quran</span><div class="bar grow"><i style="width:20%"></i></div><span class="t13 mut" style="width:48px;text-align:right">5/25</span></div>
+        <div class="row g12"><span class="t14" style="width:140px">Miracle</span><div class="bar grow"><i style="width:0%"></i></div><span class="t13 mut" style="width:48px;text-align:right">0/25</span></div>
+        <div class="row g12"><span class="t14" style="width:140px">Parenting</span><div class="bar grow"><i style="width:64%"></i></div><span class="t13 mut" style="width:48px;text-align:right">16/25</span></div>
+        <div class="row g12"><span class="t14" style="width:140px">Emotional</span><div class="bar grow"><i style="width:36%"></i></div><span class="t13 mut" style="width:48px;text-align:right">9/25</span></div>
+        <span class="t12 mut">Data contoh. Tiga tema lain disembunyikan agar ringkas. Rincian per kategori ada di halaman Kategori.</span>
+      </div>
+      <div class="card p20 col g12" style="width:360px;flex:none">
+        <span class="h3">Perlu perhatian</span>
+        <div class="row g8 t14"><span class="badge bad">4</span><span class="grow">kartu berstatus Perlu ulang</span></div>
+        <div class="row g8 t14"><span class="badge warn">3</span><span class="grow">kartu dengan keyakinan baca di bawah 70%</span></div>
+        <div class="row g8 t14"><span class="badge warn">2</span><span class="grow">kemungkinan kartu ganda</span></div>
+        <div class="grow"></div>
+        <button class="btn">Buka hasil scan</button>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

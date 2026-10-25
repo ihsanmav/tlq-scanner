@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Scan sisi depan</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="tlq.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="col" style="width:1280px;height:800px;background:#fafafa;overflow:hidden">
+  <div class="top">
+    <div class="logo">TLQ</div>
+    <div class="col"><span class="b t14">TLQ Scanner</span><span class="t12 mut">The Living Qur'an</span></div>
+    <div class="grow"></div>
+    <div class="row g8">
+      <div class="step done"><i>✓</i>Tema dan kategori</div><div class="line"></div>
+      <div class="step on"><i>2</i>Sisi depan</div><div class="line"></div>
+      <div class="step"><i>3</i>Sisi belakang</div><div class="line"></div>
+      <div class="step"><i>4</i>Simpan</div>
+    </div>
+    <div class="grow"></div>
+    <span class="badge">Operator 1</span>
+  </div>
+  <div class="row grow" style="padding:32px 64px;gap:32px;align-items:stretch">
+    <div class="col grow g16">
+      <div class="row between">
+        <h1 class="h2">Scan sisi depan</h1>
+        <span class="badge ok">Kamera aktif · Webcam internal</span>
+      </div>
+      <div class="cam grow">
+        <div class="frame" style="width:560px;height:360px">
+          <div class="col g8" style="align-items:center;color:#e4e4e7;text-align:center;padding:0 40px">
+            <span class="b t15">Letakkan sisi depan kartu di dalam bingkai</span>
+            <span class="t13" style="color:#a1a1aa">Surah:Ayat dan terjemahan harus terlihat jelas</span>
+          </div>
+        </div>
+        <div style="position:absolute;left:16px;top:16px" class="badge teal">Pratinjau langsung</div>
+      </div>
+    </div>
+    <div class="col g16" style="width:320px;flex:none">
+      <div class="card p20 col g12">
+        <span class="t12 mut b">TEMA DAN KATEGORI</span>
+        <div class="row g8"><span class="badge teal">T01</span><span class="h3">Married</span></div>
+        <span class="t14">Kategori: <b>Sebelum menikah</b></span>
+        <span class="t13 mut">Kartu ke-13 dari target 25 di tema ini</span>
+        <div class="bar"><i style="width:48%"></i></div>
+      </div>
+      <div class="card p20 col g8">
+        <span class="h3">Tips supaya teks terbaca</span>
+        <span class="t14 mut">• Cahaya merata, tanpa pantulan</span>
+        <span class="t14 mut">• Kartu rata dan tidak miring</span>
+        <span class="t14 mut">• Bingkai penuh terisi kartu</span>
+      </div>
+      <div class="grow"></div>
+      <button class="btn p lg block">Ambil foto sisi depan</button>
+      <button class="btn block">Ganti tema atau kategori</button>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

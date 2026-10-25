@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Tinjau belakang dan simpan HP</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="tlq.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="col" style="width:390px;height:844px;background:#fafafa;overflow:hidden">
+  <div class="mtop">
+    <button class="btn sm" aria-label="Kembali">Kembali</button>
+    <div class="col grow" style="align-items:center"><span class="b t14">Tinjau sisi belakang</span><span class="t12 mut">Married › Sebelum menikah · kartu ke-13</span></div>
+    <span style="width:72px"></span>
+  </div>
+  <div class="mstep"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></div>
+  <div class="col grow" style="padding:16px;gap:12px;overflow:hidden">
+    <div class="row g12">
+      <div class="cardimg col" style="width:132px;height:84px;padding:10px;justify-content:center;flex:none"><span class="t12 b">INSIGHT</span><span style="font-size:9px;line-height:1.3">Ketenangan dalam rumah tangga…</span></div>
+      <div class="col g8 grow"><span class="badge ok" style="align-self:flex-start">Keyakinan baca 94%</span><button class="btn sm" style="align-self:flex-start">Foto ulang</button></div>
+    </div>
+    <div>
+      <label class="lbl" for="in">Insight / Tafsir</label>
+      <textarea class="inp" id="in" rows="2">Ketenangan dalam rumah tangga tumbuh dari kebiasaan kecil yang dijaga setiap hari.</textarea>
+    </div>
+    <div class="col g6">
+      <div class="row between"><span class="lbl" style="margin:0">What to do</span><span class="t12 mut">3 langkah</span></div>
+      <div class="todo"><span class="gr" aria-hidden="true">⋮⋮</span><span class="cb" aria-hidden="true"></span><input value="Ucapkan terima kasih pada pasanganmu" aria-label="Langkah 1"><button class="x" aria-label="Hapus langkah 1">×</button></div>
+      <div class="todo"><span class="gr" aria-hidden="true">⋮⋮</span><span class="cb" aria-hidden="true"></span><input value="Tanyakan kabarnya sebelum bercerita" aria-label="Langkah 2"><button class="x" aria-label="Hapus langkah 2">×</button></div>
+      <div class="todo"><span class="gr" aria-hidden="true">⋮⋮</span><span class="cb" aria-hidden="true"></span><input value="Sisihkan 10 menit tanpa ponsel" aria-label="Langkah 3"><button class="x" aria-label="Hapus langkah 3">×</button></div>
+      <button class="addrow">+ Tambah langkah</button>
+    </div>
+    <div class="card p12 row g8">
+      <div class="col g4 grow"><span class="t12 mut b">RINGKASAN</span><span class="t13"><b>Ar-Rum 30:21</b> · Married › Sebelum menikah</span></div>
+      <span class="badge warn">Draf</span>
+    </div>
+  </div>
+  <div class="mbar"><button class="btn p lg block">Simpan sebagai draf</button></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

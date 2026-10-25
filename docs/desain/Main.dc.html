@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Pilih tema dan kategori</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="tlq.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="col" style="width:1280px;height:800px;background:#fafafa;overflow:hidden">
+  <div class="top">
+    <div class="logo">TLQ</div>
+    <div class="col"><span class="b t14">TLQ Scanner</span><span class="t12 mut">The Living Qur'an</span></div>
+    <div class="grow"></div>
+    <div class="row g8">
+      <div class="step on"><i>1</i>Tema dan kategori</div><div class="line"></div>
+      <div class="step"><i>2</i>Sisi depan</div><div class="line"></div>
+      <div class="step"><i>3</i>Sisi belakang</div><div class="line"></div>
+      <div class="step"><i>4</i>Simpan</div>
+    </div>
+    <div class="grow"></div>
+    <span class="badge">Operator 1</span>
+  </div>
+  <div class="col grow" style="padding:32px 64px;gap:20px">
+    <div class="col g4">
+      <h1 class="h1">Pilih tema, lalu kategori</h1>
+      <p class="t15 mut">Setiap tema punya beberapa kategori. Kartu yang kamu scan masuk ke kategori yang dipilih.</p>
+    </div>
+    <div class="row grow g24" style="align-items:stretch">
+      <div class="col g8" style="width:400px;flex:none">
+        <span class="t12 mut b">1. TEMA</span>
+        <button class="cat sel" style="flex-direction:row;align-items:center;gap:12px;padding:0 14px;height:52px"><span class="badge teal">T01</span><span class="b t14 grow">Married</span><span class="t12 mut">13 dari 25</span></button>
+        <button class="cat" style="flex-direction:row;align-items:center;gap:12px;padding:0 15px;height:52px"><span class="badge">T02</span><span class="b t14 grow">Penghafal Quran</span><span class="t12 mut">5 dari 25</span></button>
+        <button class="cat" style="flex-direction:row;align-items:center;gap:12px;padding:0 15px;height:52px"><span class="badge">T03</span><span class="b t14 grow">Miracle</span><span class="t12 mut">0 dari 25</span></button>
+        <button class="cat" style="flex-direction:row;align-items:center;gap:12px;padding:0 15px;height:52px"><span class="badge">T04</span><span class="b t14 grow">Parenting</span><span class="t12 mut">16 dari 25</span></button>
+        <button class="cat" style="flex-direction:row;align-items:center;gap:12px;padding:0 15px;height:52px"><span class="badge">T05</span><span class="b t14 grow">Karir</span><span class="t12 mut">2 dari 25</span></button>
+        <button class="cat" style="flex-direction:row;align-items:center;gap:12px;padding:0 15px;height:52px"><span class="badge">T06</span><span class="b t14 grow">Kesehatan</span><span class="t12 mut">0 dari 25</span></button>
+        <button class="cat" style="flex-direction:row;align-items:center;gap:12px;padding:0 15px;height:52px"><span class="badge">T07</span><span class="b t14 grow">Emotional</span><span class="t12 mut">9 dari 25</span></button>
+        <button class="cat" style="flex-direction:row;align-items:center;gap:12px;padding:0 15px;height:52px"><span class="badge">T08</span><span class="b t14 grow">Thalabul Ilmi</span><span class="t12 mut">1 dari 25</span></button>
+      </div>
+      <div class="col g8 grow">
+        <span class="t12 mut b">2. KATEGORI DI TEMA MARRIED</span>
+        <div class="card p20 col g12 grow">
+          <button class="cat sel" style="flex-direction:row;align-items:center;gap:12px;padding:0 14px;height:64px"><span class="badge teal">C01</span><span class="col grow"><span class="b t14">Sebelum menikah</span><span class="t12 mut">5 kartu</span></span><span class="t12 teal b">Dipilih</span></button>
+          <button class="cat" style="flex-direction:row;align-items:center;gap:12px;padding:0 15px;height:64px"><span class="badge">C02</span><span class="col grow"><span class="b t14">Hidup berpasangan</span><span class="t12 mut">5 kartu</span></span></button>
+          <button class="cat" style="flex-direction:row;align-items:center;gap:12px;padding:0 15px;height:64px"><span class="badge">C03</span><span class="col grow"><span class="b t14">Mengatasi konflik</span><span class="t12 mut">3 kartu</span></span></button>
+          <div class="grow"></div>
+          <span class="t12 mut">Nama kategori di atas adalah contoh. Admin mengelola kategori di Master Data.</span>
+        </div>
+      </div>
+    </div>
+    <div class="row between">
+      <span class="t13 mut">Progres di atas adalah contoh. Target awal: 25 kartu per tema.</span>
+      <a class="btn p lg" href="S2-Scan-depan.dc.html" style="text-decoration:none">Mulai scan: Married › Sebelum menikah</a>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

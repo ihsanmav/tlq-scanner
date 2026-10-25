@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Hasil scan</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="tlq.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="row" style="width:1280px;height:800px;background:#fafafa;overflow:hidden;align-items:stretch">
+  <div class="side">
+    <div class="row g12" style="padding:0 12px 16px"><div class="logo">TLQ</div><span class="b t15">Master Data</span></div>
+    <div class="nav">Ringkasan</div>
+    <div class="nav">Katalog kartu</div>
+    <div class="nav on">Hasil scan</div>
+    <div class="nav">Tema</div>
+    <div class="nav">Kategori</div>
+    <div class="nav">Impor katalog</div>
+    <div class="grow"></div>
+    <div class="nav">Keluar</div>
+  </div>
+  <div class="col grow" style="padding:32px 40px;gap:20px;min-width:0">
+    <div class="col g4"><h1 class="h1">Hasil scan</h1><span class="t14 mut">Riwayat scan dari semua operator. Periksa yang keyakinan bacanya rendah.</span></div>
+    <div class="row g12 wrap">
+      <button class="chip on">Semua</button>
+      <button class="chip">Keyakinan rendah</button>
+      <button class="chip">Kemungkinan ganda</button>
+      <button class="chip">Semua tema</button>
+      <button class="chip">Operator 1</button>
+      <button class="chip">Operator 2</button>
+    </div>
+    <div class="card" style="overflow:hidden">
+      <table class="t">
+        <thead><tr><th>Waktu</th><th>Operator</th><th>Kartu</th><th>Tema › Kategori</th><th>Baca depan</th><th>Baca belakang</th><th>Status</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>14.52</td><td>Operator 1</td><td><b>Ar-Rum 30:21</b><div class="t12 mut">K01-013</div></td><td><div class="t12 mut">Married</div><span class="badge teal">Sebelum menikah</span></td><td><span class="badge warn">82%</span></td><td><span class="badge ok">94%</span></td><td><span class="badge warn">Draf</span></td><td><button class="btn sm">Lihat teks</button></td></tr>
+          <tr><td>14.47</td><td>Operator 2</td><td><b>Luqman 31:14</b><div class="t12 mut">K04-016</div></td><td><div class="t12 mut">Parenting</div><span class="badge teal">Mendidik anak</span></td><td><span class="badge ok">96%</span></td><td><span class="badge ok">91%</span></td><td><span class="badge ok">Final</span></td><td><button class="btn sm">Lihat teks</button></td></tr>
+          <tr><td>14.40</td><td>Operator 2</td><td><b>Ar-Ra'd 13:28</b><div class="t12 mut">K07-009</div></td><td><div class="t12 mut">Emotional</div><span class="badge teal">Cemas</span></td><td><span class="badge bad">58%</span></td><td><span class="badge warn">73%</span></td><td><span class="badge bad">Perlu ulang</span></td><td><button class="btn sm">Lihat teks</button></td></tr>
+          <tr><td>14.31</td><td>Operator 1</td><td><b>An-Nisa 4:19</b><div class="t12 mut">K01-012</div></td><td><div class="t12 mut">Married</div><span class="badge teal">Hidup berpasangan</span></td><td><span class="badge ok">90%</span></td><td><span class="badge ok">93%</span></td><td><span class="badge warn">Draf</span></td><td><button class="btn sm">Lihat teks</button></td></tr>
+          <tr><td>14.22</td><td>Operator 2</td><td><b>Al-Jumu'ah 62:10</b><div class="t12 mut">K05-002</div></td><td><div class="t12 mut">Karir</div><span class="badge teal">Bekerja</span></td><td><span class="badge ok">88%</span></td><td><span class="badge warn">76%</span></td><td><span class="badge warn">Draf</span></td><td><button class="btn sm">Lihat teks</button></td></tr>
+          <tr><td>14.10</td><td>Operator 1</td><td><b>Al-Mujadilah 58:11</b><div class="t12 mut">K08-001</div></td><td><div class="t12 mut">Thalabul Ilmi</div><span class="badge teal">Belajar</span></td><td><span class="badge ok">92%</span></td><td><span class="badge ok">95%</span></td><td><span class="badge warn">Draf</span></td><td><button class="btn sm">Lihat teks</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <span class="t12 mut">Semua baris dan nama kategori adalah contoh. Foto kartu tidak disimpan, jadi yang bisa dilihat adalah teks hasil bacanya.</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

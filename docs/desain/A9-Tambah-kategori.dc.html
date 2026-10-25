@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Tambah kategori</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="tlq.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div style="position:relative;width:1280px;height:800px;background:#fafafa;overflow:hidden">
+  <div class="row" style="width:1280px;height:800px;align-items:stretch">
+    <div class="side">
+      <div class="row g12" style="padding:0 12px 16px"><div class="logo">TLQ</div><span class="b t15">Master Data</span></div>
+      <div class="nav">Ringkasan</div>
+      <div class="nav">Katalog kartu</div>
+      <div class="nav">Hasil scan</div>
+      <div class="nav">Tema</div>
+      <div class="nav on">Kategori</div>
+      <div class="nav">Impor katalog</div>
+    </div>
+    <div class="col grow" style="padding:32px 40px;gap:20px">
+      <div class="row between"><h1 class="h1">Kategori</h1><span class="btn p">+ Tambah kategori</span></div>
+      <div class="card" style="height:480px"></div>
+    </div>
+  </div>
+  <div class="scrim"></div>
+  <div class="dlg col" style="left:400px;top:60px;width:480px">
+    <div class="col g4" style="padding:24px 24px 8px">
+      <h2 class="h2">Tambah kategori</h2>
+      <span class="t13 mut">Kategori baru berada di dalam satu tema dan muncul di aplikasi Scanner setelah disimpan dan aktif.</span>
+    </div>
+    <div class="col g16" style="padding:16px 24px">
+      <div>
+        <label class="lbl" for="tm">Tema</label>
+        <select class="inp" id="tm"><option>Married</option><option>Penghafal Quran</option><option>Miracle</option><option>Parenting</option><option>Karir</option><option>Kesehatan</option><option>Emotional</option><option>Thalabul Ilmi</option></select>
+        <div class="help">Wajib dipilih. Satu kategori berada di satu tema.</div>
+      </div>
+      <div>
+        <label class="lbl" for="k">Kode</label>
+        <input class="inp ro" id="k" value="C14" readonly>
+      </div>
+      <div>
+        <label class="lbl" for="n">Nama kategori</label>
+        <input class="inp err" id="n" value="Sebelum menikah">
+        <div class="errt">Nama kategori sudah ada di tema Married. Pakai nama lain.</div>
+      </div>
+      <div>
+        <label class="lbl" for="ds">Deskripsi (boleh dikosongkan)</label>
+        <textarea class="inp" id="ds" rows="2" placeholder="Contoh: kartu untuk calon pengantin"></textarea>
+      </div>
+      <div class="row g16">
+        <div style="width:120px"><label class="lbl" for="ur">Urutan</label><input class="inp" id="ur" value="4"></div>
+        <div class="row g12 grow" style="padding-top:22px"><span class="sw" role="img" aria-label="Aktif"></span><span class="t14">Aktif di aplikasi Scanner</span></div>
+      </div>
+    </div>
+    <div class="row g8" style="padding:8px 24px 24px;justify-content:flex-end">
+      <button class="btn">Batal</button>
+      <button class="btn p">Simpan kategori</button>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Scan kartu HP</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="tlq.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="col" style="width:390px;height:844px;background:#fafafa;overflow:hidden">
+  <div class="mtop">
+    <button class="btn sm" aria-label="Kembali">Kembali</button>
+    <div class="col grow" style="align-items:center"><span class="b t14">Scan sisi depan</span><span class="t12 mut">Married › Sebelum menikah · kartu ke-13</span></div>
+    <span style="width:72px"></span>
+  </div>
+  <div class="mstep"><i class="on"></i><i class="on"></i><i></i><i></i></div>
+  <div class="col grow" style="padding:16px;gap:12px">
+    <div class="cam grow">
+      <div class="frame" style="width:320px;height:230px">
+        <div class="col g4" style="align-items:center;text-align:center;color:#e4e4e7;padding:0 24px">
+          <span class="b t14">Letakkan sisi depan di dalam bingkai</span>
+          <span class="t12" style="color:#a1a1aa">Surah:Ayat dan terjemahan terlihat jelas</span>
+        </div>
+      </div>
+      <span class="badge teal" style="position:absolute;left:12px;top:12px">Kamera belakang</span>
+    </div>
+    <div class="row g8 t13 mut" style="justify-content:center"><span>Cahaya merata</span><span>·</span><span>Kartu rata</span><span>·</span><span>Tanpa pantulan</span></div>
+  </div>
+  <div class="mbar" style="flex-direction:column">
+    <button class="btn p lg block">Ambil foto sisi depan</button>
+    <button class="btn block">Ganti kamera</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

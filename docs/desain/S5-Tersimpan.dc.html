@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Kartu tersimpan</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="tlq.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="col" style="width:1280px;height:800px;background:#fafafa;overflow:hidden">
+  <div class="top">
+    <div class="logo">TLQ</div>
+    <div class="col"><span class="b t14">TLQ Scanner</span><span class="t12 mut">The Living Qur'an</span></div>
+    <div class="grow"></div>
+    <div class="row g8">
+      <div class="step done"><i>✓</i>Tema dan kategori</div><div class="line"></div>
+      <div class="step done"><i>✓</i>Sisi depan</div><div class="line"></div>
+      <div class="step done"><i>✓</i>Sisi belakang</div><div class="line"></div>
+      <div class="step done"><i>✓</i>Simpan</div>
+    </div>
+    <div class="grow"></div>
+    <span class="badge">Operator 1</span>
+  </div>
+  <div class="col grow" style="align-items:center;justify-content:center;padding:40px">
+    <div class="card p24 col g20" style="width:560px;align-items:center;text-align:center">
+      <div style="width:56px;height:56px;border-radius:50%;background:#ccfbf1;color:#0F766E;display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700">✓</div>
+      <div class="col g8">
+        <h1 class="h1">Kartu tersimpan</h1>
+        <p class="t15 mut">Data masuk ke Master Data dengan status Draf. Admin bisa memeriksanya dan mengubahnya menjadi Final.</p>
+      </div>
+      <div class="card p16 row g16" style="width:100%;text-align:left;background:#fafafa">
+        <div class="col g4 grow">
+          <span class="t12 mut b">KARTU BARU</span>
+          <span class="h3">Ar-Rum 30:21</span>
+          <span class="t13 mut">Married › Sebelum menikah · kode K01-013</span>
+        </div>
+        <span class="badge warn">Draf</span>
+      </div>
+      <div class="col g8" style="width:100%">
+        <div class="row between t13"><span class="mut">Progres tema Married</span><span class="b">13 dari 25</span></div>
+        <div class="bar"><i style="width:52%"></i></div>
+      </div>
+      <div class="col g8" style="width:100%">
+        <button class="btn p lg block">Scan kartu berikutnya</button>
+        <button class="btn block">Ganti tema atau kategori</button>
+      </div>
+    </div>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

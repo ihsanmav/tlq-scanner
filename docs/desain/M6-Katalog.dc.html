@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Master Data katalog HP</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="tlq.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}.clamp{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.tab{flex:1;height:56px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:500;color:#52525b}.tab.on{color:#0F766E;font-weight:700}</style>
+</helmet>
+<div class="col" style="width:390px;height:844px;background:#fafafa;overflow:hidden">
+  <div class="mtop">
+    <div class="logo">TLQ</div>
+    <div class="col grow"><span class="b t14">Master Data</span></div>
+    <button class="btn sm p">Tambah kartu</button>
+  </div>
+  <div class="col grow" style="padding:16px;gap:12px;overflow:hidden">
+    <div class="col g4"><h1 class="h2">Katalog kartu</h1><span class="t13 mut">62 kartu</span></div>
+    <input class="inp" placeholder="Cari Surah:Ayat atau terjemahan" aria-label="Cari kartu">
+    <div class="row g8" style="overflow-x:auto;flex:none"><span class="chip on">Semua</span><span class="chip">Tema</span><span class="chip">Kategori</span><span class="chip">Draf</span><span class="chip">Final</span><span class="chip">Perlu ulang</span></div>
+    <div class="card p12 col g8">
+      <div class="row between"><span class="b t14">Ar-Rum 30:21</span><span class="badge warn">Draf</span></div>
+      <span class="t13 mut clamp">Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan pasangan untukmu dari jenismu sendiri…</span>
+      <div class="row between"><span class="badge teal">Married › Sebelum menikah</span><span class="t12 mut">K01-013</span></div>
+    </div>
+    <div class="card p12 col g8">
+      <div class="row between"><span class="b t14">Luqman 31:14</span><span class="badge ok">Final</span></div>
+      <span class="t13 mut clamp">Contoh terjemahan kartu parenting yang cukup panjang sehingga dipotong pada baris kedua…</span>
+      <div class="row between"><span class="badge teal">Parenting › Mendidik anak</span><span class="t12 mut">K04-016</span></div>
+    </div>
+    <div class="card p12 col g8">
+      <div class="row between"><span class="b t14">Ar-Ra'd 13:28</span><span class="badge bad">Perlu ulang</span></div>
+      <span class="t13 mut clamp">Contoh terjemahan kartu emotional yang cukup panjang sehingga dipotong pada baris kedua…</span>
+      <div class="row between"><span class="badge teal">Emotional › Cemas</span><span class="t12 mut">K07-009</span></div>
+    </div>
+    <div class="card p12 col g8">
+      <div class="row between"><span class="b t14">An-Nisa 4:19</span><span class="badge warn">Draf</span></div>
+      <span class="t13 mut clamp">Contoh terjemahan kartu married yang cukup panjang sehingga dipotong pada baris kedua…</span>
+      <div class="row between"><span class="badge teal">Married › Hidup berpasangan</span><span class="t12 mut">K01-012</span></div>
+    </div>
+  </div>
+  <div class="row" style="background:#fff;border-top:1px solid #e4e4e7;flex:none">
+    <span class="tab">Ringkasan</span><span class="tab on">Katalog</span><span class="tab">Hasil</span><span class="tab">Tema</span><span class="tab">Kategori</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Login admin</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="tlq.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="col" style="width:1280px;height:800px;background:#fafafa;overflow:hidden;align-items:center;justify-content:center">
+  <div class="card p24 col g20" style="width:400px">
+    <div class="row g12">
+      <div class="logo">TLQ</div>
+      <div class="col"><span class="b t15">Master Data TLQ</span><span class="t12 mut">Khusus admin</span></div>
+    </div>
+    <div class="col g4">
+      <h1 class="h2">Masuk</h1>
+      <p class="t14 mut">Aplikasi Scanner tidak perlu login. Hanya Master Data yang dilindungi.</p>
+    </div>
+    <div>
+      <label class="lbl" for="u">Nama pengguna</label>
+      <input class="inp" id="u" value="admin">
+    </div>
+    <div>
+      <label class="lbl" for="p">Kata sandi</label>
+      <input class="inp err" id="p" type="password" value="contoh-salah">
+      <div class="errt">Nama pengguna atau kata sandi salah. Coba lagi.</div>
+    </div>
+    <button class="btn p lg block">Masuk</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":800}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
